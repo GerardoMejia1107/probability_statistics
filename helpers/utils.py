@@ -28,5 +28,5 @@ def grouped_data_table(variable, range_series):
     return grouped_table
 
 # Esta función se encarga de exportar el DataFrame a un archivo CSV.
-def export_grouped_csv(grouped_dataframe_table, variable_name):
-    grouped_dataframe_table.to_csv(f"../database/men/{variable_name}.csv")
+def export_grouped_csv(grouped_dataframe_table, variable_name, route):
+    grouped_dataframe_table.to_csv(f"{route}{variable_name}.csv")
